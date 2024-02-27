@@ -1,84 +1,48 @@
-* { box-sizing: border-box;}
-body { font-family:Verdana, Arial, sans-serif;
-       background-color: #EAEAEA;
-	   margin: 0;
-}
-#wrapper {  min-width: 600px;
-           max-width: 1280px;
-           color: #000066;
-		   background-color: #FFFFFF;
-           width: 80%;
-		   margin: auto;
-} 
-header { font-family: Georgia, "Times New Roman", serif;
-        color: #00005D; 
-		background-color: #869dc7; 
-		background-image: url(lighthouselogo.jpg);
-		background-repeat: no-repeat;
-		margin-top: 0;
-		padding-bottom: 1em;
-		height: 120px;
-}
-header h1 { padding-left: 120px;
-          padding-top: 40px;
-		  margin: 0; 	  
- }
-header span { font-style: italic;
-			  font-weight: bold;
-			  font-size: 95%;
-			  color: #FFFFFF;
-              padding-left: 15em;
-			  margin-top: -0.5em;
-}
-nav {  background-color: #00005D; 
-	   letter-spacing: 0.1em;
-	   font-weight: bold;
-	   text-align: right; 
-	   padding-right: 2em; position: relative;
-
-} 
-nav ul { list-style-type: none; 
-        margin: 0;
-}
-nav li { padding: 0.5em;
-      display: inline-block;
-}
-nav a { text-decoration: none; 
-       display: block;
-}
-nav a:link { color: #FFFFFF; }
-nav a:visited { color: #EAEAEA; }
-nav a:hover {  color: #D3DBEB;}
-main { background-color: #ffffff;
-           color: #000000;
-		   padding: 10px 20px;
-	       overflow: auto; 
-		   min-height: 400px;
-} 
-
-h2 { color: #869dc7; 
-     font-family: arial, sans-serif;
-	 margin: 5px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lighthouse Island Bistro</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="bistro.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">  
+  <nav>
+  <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="coffee.html">Coffee</a></li>
+  <li><a href="cuisine.html">Cuisine</a>
+  <ul>
+  <li><a href="breakfast.html">Breakfast</a></li>
+  <li><a href="lunch.html">Lunch</a></li>
+  <li><a href="dinner.html">Dinner</a></li>
+  </ul>
+  </li>
+  <li><a href="directions.html">Directions</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </nav>
+  <header>
+      <h1>Lighthouse Island Bistro</h1>
+   <span>the best coffee on the coast</span>
+  </header>  
+   <main> 
+   	<h2>Locally Roasted Free-Trade Coffee</h2>
+    <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+    <h2>Specialty Pastries</h2>
+    <p>Enjoy a selection of our fresh-baked, organic pastries, including 
+  fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+  	<h2>Lunch and Light Dinners</h2>
+    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
+    <h2>Panoramic View</h2>
+	<p>Take in some scenery!</p>
+	<p>The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
+   </main> 
+   <footer>Copyright &copy; 2018
+   </footer>
+  </div> 
+</body>
+</html>
 
 
-footer {font-size:70%;
-         text-align: center;
-         padding: 10px;
-		 clear: both;
-}
-header, main, nav, footer, figure, figcaption { display: block; }
-
-nav ul ul { position: absolute;
-background-color: #5564A0;
-padding: 0;
-text-align: left;
-display: none; }
-
-nav ul ul li { border: 1px solid #00005D;
-display: block;
-width: 8em;
-padding-left: 1em;
-margin-left: 0; }
-
-nav li:hover ul { display: block; }
